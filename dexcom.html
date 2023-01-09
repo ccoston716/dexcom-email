@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="date=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta name="format-detection" content="email=no" />
+  <meta name="x-apple-disable-message-reformatting" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>dexcom CGM/title</title>
+
+  <style type="text/css">
+    /* If the <link> doesn't work, use the @import */
+    /* @import url(""); */
+  </style>
+  <style type="text/css">
+    /*
+      
+      |  CSS RESET STYLES
+     
+      |  Note:Reset styles work within the style block and should not
+      |  be inlined.
+      |
+      */
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    /* html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important; 
+       -webkit-font-smoothing: antialiased !important; 
+      -moz-osx-font-smoothing: auto !important;
+    } */
+
+    /* What it does: Stops email clients resizing small text. */
+    /* * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    } */
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    /* table,
+    td {
+      border-spacing: 0;
+      font-size: 0;
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    } */
+
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    /* table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+
+    table table table {
+      table-layout: auto;
+    } */
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    /* img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      display: block;
+    } */
+
+    /* What it does: A work-around for email clients meddling in triggered links. */
+    /* *[x-apple-data-detectors], */
+    /* iOS */
+    /* .x-gmail-data-detectors, */
+    /* Gmail */
+    /* .x-gmail-data-detectors *,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif, inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    } */
+
+    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+    /* .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    } */
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    /* img.g-img+div {
+      display: none !important;
+    } */
+
+    /* What it does: Prevents underlining the button text in Windows 10 */
+    /* a .button-green-link,
+    a .button-black-link {
+      text-decoration: none !important;
+      text-transform: uppercase;
+    }
+
+    a .link-link {
+      text-decoration: none !important;
+      text-transform: uppercase;
+    }
+
+    a.underline {
+      text-decoration: underline;
+    } */
+
+    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+    /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
+    @media screen and (min-device-width: 375px) and (max-device-width: 413px) {
+
+      /* iPhone 6 and 6+ */
+      .email-container {
+        min-width: 375px !important;
+      }
+    }
+  </style>
+  <!-- CSS RESET STYLES : END -->
+
+  <!-- RESPONSIVE STYLES : START -->
+  <style>
+    /* What it does: Hover styles for buttons */
+    /* .button-green-td,
+      .button-green-link,
+      .button-black-td,
+      .button-black-a {
+        transition: all 100ms ease-in;
+      }
+
+      .link-td,
+      .link-a {
+        transition: all 100ms ease-in;
+      }
+
+      .section:hover .link-green-td,
+      .section:hover .link-green-a,
+      .section:hover .link-white-td,
+      .section:hover .link-white-a {
+        color: #3e3e3e !important;
+      }
+
+      .button-green-td:hover,
+      .button-green-link:hover {
+        background: #3e3e3e !important;
+        border-color: #3e3e3e !important;
+      }
+
+      .button-green-td:hover .button-yellow-link,
+      .button-green-link:hover .button-yellow-link {
+        color: #ffffff !important;
+      }
+
+      .button-black-td:hover,
+      .button-black-a:hover {
+        background: #3e3e3e !important;
+        border-color: #3e3e3e !important;
+      }
+
+      .button-white-td:hover .button-black-link,
+      .button-black-a:hover .button-black-link {
+        color: #f0870f !important;
+      }
+
+      .link-white-td:hover,
+      .link-white a:hover {
+        color: #3e3e3e !important;
+      }
+
+      .link-green-td:hover,
+      .link-green-a:hover {
+        color: #3e3e3e !important;
+      }
+
+      .link-black:hover,
+      .link-green:hover {
+        border-bottom: 3px solid #1b0f08 !important;
+      }
+
+      .link-td:hover,
+      .link-a:hover {
+        text-decoration: none !important;
+      } */
+
+    /* Media Queries */
+    @media screen and (max-width: 600px) {
+      .left-column {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 0 0 !important;
+      }
+
+      .left-p {
+        padding: 20px 20px 10px 20px !important;
+      }
+
+      .right-column {
+        width: 100% !important;
+        text-align: center;
+        padding: 20px 0 20px 0 !important;
+      }
+
+      .right-p {
+        padding: 20px 20px 10px 20px !important;
+      }
+    }
+
+    /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+    /* .fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      } */
+
+    /* What it does: Forces table cells into full-width rows. */
+    /* .stack-column,
+      .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+      } */
+
+    /* And center justify these ones. */
+    /* .stack-column-center {
+        text-align: center !important;
+      } */
+
+    /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+    /* .mobile-center {
+        text-align: center !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+      } */
+    /* 
+      table.mobile-center {
+        display: inline-block !important;
+      } */
+
+    /* .clear-padding {
+        padding: 0px !important;
+      } */
+
+    /* .mobile-padding {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+    } */
+  </style>
+  <!-- RESPONSIVE STYLES : END -->
+  <!-- What it does: Makes background images in 72dpi Outlook render at correct size. -->
+  <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #fbf8f8">
+  <!-- table start: start of email -->
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation" margin="0">
+    <tr>
+      <td>
+        <!-- table start: container max-width 600px -->
+        <table width="600" cellspacing="0" cellpadding="0" border="0" role="presentation" align="center"
+          class="container" style="background-color: #024a09">
+          <!-- !row start: row 1 banner  -->
+          <tr>
+            <td>
+              <!-- start of dexcom banner row-->
+              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+                style="background: #0db02b; padding: 15px 0px 0px">
+                <tr>
+                  <td align="center">
+                    <a href="#"><img src="https://i.postimg.cc/T3wBFK4t/dexcomheader210.png" alt="Dexcom banner" style="width: 210px" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end banner row -->
+          <!--! order table 2-->
+          <tr>
+            <td>
+              <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation" style="
+                    background: #ffffff;
+                    padding: 25px 40px 25px 40px;
+                    border-bottom: 3px solid #776c6c">
+                <tr>
+                  <td style="
+                        font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
+                          Arial, 'Lucida Grande', sans-serif;
+                        color: #434141;
+                        padding: 25px 0 10px 0;
+                        font-size: 16px;
+                        font-weight: 100;
+                        text-align: center;
+                        padding: 0px 40px 20px 40px;
+                      ">
+                    <strong> ORDER #20294789</strong>
+                  </td>
+                </tr>
+                <!-- replacement row -->
+                <tr>
+                  <td style="
+                        font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
+                          Arial, 'Lucida Grande', sans-serif;
+                        color: #0db02b;
+                        font-weight: 400;
+                        font-size: 40px;
+                        text-align: center;
+                        line-height: 50px;
+                      ">
+                    Your Dexcom Replacement Has Arrived
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end order row -->
+          <!--! hi cc table 3-->
+          <tr>
+            <td>
+              <table class="hi-row" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                role="presentation" margin="0" style="
+                    background: #ffffff;
+                    padding: 15px 0px 30px 0px;
+                    border-bottom: 3px solid #776c6c;
+                  ">
+                <tr>
+                  <td style="
+                        text-align: center;
+                        font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
+                          Arial, 'Lucida Grande', sans-serif;
+                        font-size: 15px;
+                        margin: 0;
+                        line-height: 22px;
+                      ">
+                     <p style="padding: 0 0px 0 0px">
+                      Hi James Jobseeker,<br />We wanted to let you know that
+                      your Dexcom replacement has<br />
+                      " been delivered to:"<br />
+                     </p>
+                     
+                    <p>
+                      2022 E. Ponce Deleon Ave. <br />Stone Mountain, GA,
+                      30083,<br />
+                      United States
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end hi cc -->
+          <!-- !track order table 4 -->
+          <tr>
+            <td>
+              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+                margin="0" style="border-bottom: 3px solid #776c6c">
+                <tr>
+                  <td style="background-color: #ffffff">
+                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" margin="0" style="padding: 15px 40px 25px 0px">
+                      <tr>
+                        <td style="
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              margin: 0;
+                              line-height: 22px;
+                              font-weight: 400;
+                              text-align: left;
+                              font-size: 14px;
+                              padding: 0 0 0 20px;
+                            ">
+                          SR&nbsp;#
+                        </td>
+                        <td style="font-size: 13px">786098-98753</td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              margin: 0;
+                              line-height: 22px;
+                              font-weight: 400;
+                              text-align: left;
+                              font-size: 14px;
+                              padding: 8px 0 0 20px;
+                            ">
+                          Order&nbsp;#
+                        </td>
+                        <td style="font-size: 13px; padding: 8px 0 0 0px">
+                          786987537
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="
+                              font-size: 16px;
+                              text-align: center;
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              margin: 0;
+                              line-height: 22px;
+                              font-weight: 400;
+                              text-align: left;
+                              font-size: 14px;
+                              padding: 8px 0 0 20px;
+                            ">
+                          Tracking&nbsp;Details
+                        </td>
+
+                        <td style="
+                              font-size: 13px;
+                              padding: 8px 0 0 0px;
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              font-weight: 400;
+                              font-size: 13px;
+
+                              padding: 8px 0 0 0px;
+                            ">
+                          <strong>
+                            <a href="#" style="color: #0658fa">Click here to track your order</a></strong>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- !items delivered table 5-->
+          <tr>
+            <td>
+              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+                margin="0" style="
+                    padding: 0px 0px 0px 0px;
+                    border-bottom: 3px solid #776c6c;
+                  ">
+                <tr>
+                  <td style="background-color: white">
+                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" margin="0" style="padding: 15px 0px 25px 20px">
+                      <tr>
+                        <td style="
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              margin: 0;
+                              line-height: 22px;
+                              font-size: 19px;
+                              padding: 10px 0 10px 0;
+                              margin: 0;
+                              color: #332f2f;
+                            ">
+                          <h3 style="margin: 0; font-weight: 400">
+                            Items Delivered
+                          </h3>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding: 10px 0 0 30px">
+                          <img src="https://i.postimg.cc/KzXV1JvW/sensor.png
+" alt="dexcom sensor" style="width: 75px" />
+                        </td>
+
+                        <td style="
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              font-size: 16px;
+                            ">
+                          <h4 style="
+                                font-weight: 400;
+                                margin: 0;
+                                padding: 0 30px 0 0;
+                              ">
+                            Humana Dexcom G6 Sensor 1-Pack&nbsp;
+                            <span style="font-size: 14px; color: #776c6c">QTY: 1</span>
+                          </h4>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end items delivered table -->
+          <!-- !start dexcom support table 6 -->
+          <tr>
+            <td>
+              <table class="banner" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                role="presentation" style="
+                    background: #f4f4f7;
+                    border-bottom: 3px solid #1b0b0b;
+                    padding: 30px 0px 40px 0px;
+                  ">
+                <tr>
+                  <td>
+                    <!-- start of dexcom banner row-->
+                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" style="background: #0db02b; padding: 1px 0px 10px 0px;">
+                      <tr>
+                        <td align="center" style="
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              padding: 10px 0 10px 0;
+                              font-weight: 400;
+                              font-size: 20px;
+                              color: white;">
+                          Dexcom Product Support
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!--start left 50% row  -->
+                <tr>
+                  <td>
+                    <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" style="background: #f4fbf6; padding: 25px 0px 4px 50px;">
+                      <tr>
+                        <td>
+                          <img src="https://i.postimg.cc/0jPBfjSd/smartdevice.png
+" width="230" alt="" />
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <p style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-size: 20px;
+                                color: #434141;
+                                padding: 10px 0px 0px 0px;
+                                font-weight: 400;
+                                line-height: 24px;">
+                            Smart Device Settings to Avoid with Dexcom CGM
+                          </p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <p class="left-p" style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-size: 14px;
+                                color: #434141;
+                                padding: 20px 15px 10px 0px;
+                                line-height: 20px;">
+                            DexcomCGM experience in the app or cause product
+                            Some smart device Settings may interfere with your
+                            issues. Select your phone device settings page
+                            below to troubleshoot or prevent phone settings
+                            related product issues.
+                          </p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <a href="" style="
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                color: #0db02b;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;">
+                            Optimal phone settings</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 15px 0 4px;">
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;">Set up the G6 iOS 14 widget</a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- !right side table -->
+                    <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" style="background: #f4fbf6; padding: 25px 50px 4px 0px;">
+                      <tr>
+                        <td>
+                          <img src="https://i.postimg.cc/hj9YTTXt/dexcomman.png
+" width="230" alt="man showing phone app" />
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <p class="" style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-size: 20px;
+                                color: #434141;
+                                padding: 10px 10px 0px 0px;
+                                font-weight: 400;
+                                line-height: 24px;">
+                            You have questions? We have answers!
+                          </p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <p class="right-p" style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-size: 14px;
+                                color: #434141;
+                                padding: 20px 10px 10px 0px;
+                                line-height: 20px;">
+                            Did you know you can access the Dexcom Help Center
+                            directly within the Dexcom G6 app? Help is just
+                            one click or tap away! Below are a couple
+                            resources we recommend bookmarking for later.
+                          </p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;">
+                            Avoid sensor failures</a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="padding: 10px 0 0 0;">
+                          <a href="#" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                padding: 0px 0 0 0;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;">Reinforce sensor adhesive</a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="padding: 10px 0 0 0;">
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                padding: 0px 0 0 0;
+                                border-bottom: 2px solid green;
+                                text-decoration: none;">
+                            Prepping skin for sensor</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- !still have questions table  7-->
+          <tr>
+            <td>
+              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+                margin="0" style="
+                    background: #f9fefa;
+                    padding: 15px 0px 0px 0px;
+                    border-bottom: 3px solid #024a09;">
+                <tr>
+                  <td style="
+                        font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
+                          Arial, 'Lucida Grande', sans-serif;
+                        line-height: 22px;
+                        padding: 10px 0 15px 0;
+                        color: #434141;">
+                    <h3 style="
+                          margin: 0;
+                          font-weight: 400;
+                          text-align: center;
+                          font-size: 20px;">
+                      Still have questions? Help is here
+                    </h3>
+                  </td>
+                </tr>
+                <!-- P tr -->
+                <tr>
+                  <td style="padding: 10px 40px 20px 40px">
+                    <p style="
+                          margin: 0;
+                          font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
+                            Arial, 'Lucida Grande', sans-serif;
+                          font-size: 13px;
+                          color: #434141;
+                          text-align: center;
+                          line-height: 24px;">
+                      For additional support, visit the Dexcom Help Center or
+                      submit a Technical Support request below.
+                    </p>
+                  </td>
+                </tr>
+                <!-- button -->
+                <tr>
+                  <td>
+                    <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 0 0 0px 0;">
+                      <tr>
+                        <td style="
+                              padding: 12px 20px 12px 20px;
+                              border-radius: 50px;
+                              background-color: #137d00;" align="center">
+                          <a rel="noopener" target="_blank" href="http://litmus.com" target="_blank" style="
+                                font-size: 14px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-weight: 600;
+                                color: #ffffff;
+                                text-decoration: none;
+                                display: inline-block;">
+                            Dexcom Help Center
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- tr -->
+                <tr>
+                  <td style="
+                        font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
+                          Arial, 'Lucida Grande', sans-serif;
+                        text-transform: uppercase;
+                        line-height: 19px;
+                        font-size: 13px;
+                        padding: 40px 0 15px 0;
+                        margin: 0;
+                        color: #434141;">
+                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" margin="0">
+                      <tr>
+                        <td>
+                          <h2 style="
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                padding: 0 0 10px 0;
+                                text-align: center;
+                                margin: 0;
+                                font-weight: 600;">
+                            global technical support
+                          </h2>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <p style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-size: 13px;
+                                color: #434141;
+                                line-height: 24px;
+                                text-align: center;
+                                line-height: 24px;
+                                font-size: 10px;">
+                            Product troubleshooting or replacement
+                            inquiries<br />
+                            Available 24 hours a day; 7 days a week
+                          </p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="text-align: center; padding: 10px 0 10px 0;">
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;
+                                text-decoration: none;">
+                            Request a call back
+                          </a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="text-align: center; padding: 0 0 10px 0">
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;">
+                            Submit a patient support request
+                          </a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="text-align: center; padding: 0 0 10px 0;">
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;">
+                            Submit an over patch request
+                          </a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="text-align: center">
+                          <a href="" style="
+                                color: #0db02b;
+                                font-size: 13px;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                text-decoration: none;
+                                border-bottom: 2px solid green;
+                              ">
+                            Chat live with Dexcom tech support
+                          </a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td>
+                          <p style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;
+                                font-size: 13px;
+                                color: #434141;
+                                padding: 10px 60px 20px 60px;
+                                line-height: 24px;
+                                text-align: center;
+                                font-weight: light;">
+                            (At this time, live chat is only available to US
+                            customers, Monday-Sunday from 5AM-5PM PST.)
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!--  -->
+              </table>
+            </td>
+          </tr>
+          <!-- !help center/warriors/contact us/ footer row 8 -->
+          <tr>
+            <td>
+              <table align="center" width="100%" cellspacing="0" cellpadding="0" border="0" margin="0"
+                role="presentation" style="border-bottom: 4px solid grey;">
+                <tr>
+                  <td align="center">
+                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" margin="0"
+                      style="background-color: #f6f6fa; width: 100%">
+                      <tr>
+                        <td style="
+                              padding: 20px 80px 0px 80px;
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              font-size: 13px;
+                              text-decoration: none;
+                              text-align: center;
+                              width: 100%;">
+                          <table width="100%" cellspacing="0" cellpadding="0" margin="0" border="0" align="center"
+                            role="presentation" style="background-color: #fefcfc;">
+                            <tr>
+                              <td style="padding: 0 0 0 80px;">
+                                <a href="#" style="text-decoration: none">
+                                  <h4 style="
+                                        margin: 0;
+                                        text-decoration: none;
+                                        color: #434141;">
+                                    Help Center&nbsp;|
+                                  </h4>
+                                </a>
+                              </td>
+                              <td>
+                                <a href="#" style="text-decoration: none">
+                                  <h4 style="margin: 0; color: #434141">
+                                    Warriors &nbsp;|
+                                  </h4>
+                                </a>
+                              </td>
+                              <td style="padding: 0 80px 0 0">
+                                <a href="#" style="text-decoration: none;">
+                                  <h4 style="margin: 0; color: #434141;">
+                                    Contact Us
+                                  </h4>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="text-align: center; padding: 10px 0 10px 0;">
+                          <a href="#">
+                            <img src="https://i.postimg.cc/3w0VrP7p/fb.png
+" alt="facebook link" style="width: 30px; padding: 2px;" /></a>
+                          <a href="#">
+                            <img src="https://i.postimg.cc/FsG2TyDf/linkedin.png
+" alt=" linkedin link" style="width: 30px; padding: 2px;" /></a>
+                          <a href="#">
+                            <img src="https://i.postimg.cc/fTMG72jn/insta.png
+" alt="instagram link" style="width: 30px; padding: 2px;" /></a>
+                          <a href="#">
+                            <img src="https://i.postimg.cc/qv5WTkf4/yt.png" alt=""
+                              style="width: 30px; padding: 2px;" /></a>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td align="center" style="
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              font-size: 12px;
+                              margin: 0;
+                              line-height: 18px;
+                              text-align: center;">
+                          <p style="margin: 0; padding: 0 50px 0 50px;">
+                            This email was sent to: jamesjobhunter@gmail.com
+                            Dexcom, Inc.<br />
+                            6340 Sequence Dr. San Diego, CA, 92121, US We
+                            respect your right to privacy
+                          </p>
+                          <p style="margin: 0; padding: 20px 30px 0 30px;">
+                            Dexcom, Dexcom G6, Dexcom Share, and Dexcom
+                            CLARITY are registered trademarks of Dexcom, Inc.
+                            in the U.S., and may be registered in other
+                            countries. © 2022 Dexcom, Inc. All rights
+                            reserved.
+                          </p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="
+                              padding: 20px 80px 20px 80px;
+                              font-family: 'Open Sans', 'Helvetica Neue',
+                                Helvetica, Arial, 'Lucida Grande', sans-serif;
+                              font-size: 13px;
+                              text-decoration: none;
+                              text-align: center;
+                              width: 100%;">
+                          <table width="100%" cellspacing="0" cellpadding="0" margin="0" border="0" align="center"
+                            role="presentation" style="background-color: #f1ecec;">
+                            <tr>
+                              <td style="
+                                    padding: 0 0 0 0px;
+                                    font-size: 12px;
+                                    text-align: right;">
+                                <a href="#" style="text-decoration: none">
+                                  <h4 style="
+                                        margin: 0;color: #434141;
+                                      ">
+                                    Terms of Use &nbsp;|
+                                  </h4>
+                                </a>
+                              </td>
+                              <td>
+                                <a href="#" style="text-decoration: none">
+                                  <h4 style="margin: 0; color: #434141;">
+                                    Privacy Policy &nbsp;|
+                                  </h4>
+                                </a>
+                              </td>
+                              <td style="padding: 0 20px 0 0; text-align: left">
+                                <a href="#" style="text-decoration: none">
+                                  <h4 style="margin: 0; color: #434141">
+                                    UpdateProfile
+                                  </h4>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr>
+                        <td style="
+                              font-size: 12px;
+                              text-align: center;
+                              padding: 0 60px 0 60px;
+                              line-height: 18px;">
+                          <p style="
+                                margin: 0;
+                                font-family: 'Open Sans', 'Helvetica Neue',
+                                  Helvetica, Arial, 'Lucida Grande', sans-serif;">
+                            You are receiving this important account and/or
+                            service notification in regard to a previous
+                            commercial transaction. You are a valued Dexcom
+                            customer.<br />
+                            This is not a promotional<br />
+                            message.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- end 600 table row -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- table end: end of email -->
+</body>
+
+</html>
