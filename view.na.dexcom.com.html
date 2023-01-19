@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<!-- saved from url=(0191)https://view.na.dexcom.com/?qs=9255a4fac89ab98c87bd905791e3234598f1cc6d3b6d009a2928cc3dbf279d8cd80e8fe77b1fd4b7b6425ca5fbe6c00becb077259942335d171b97941fb0e8b91b1cb8ce248e346169e21c3f974e5c72 -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  <meta name="referrer" content="no-referrer" />
+  <!-- Specifies the character encoding for the document. -->
+
+  <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Format Detection to force iOS and some Android email clients to not automatically add links around thes content types. Only really works on native iOS and some Android email clients and not universally across different mobile email apps and mobile devices. -->
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="date=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta name="format-detection" content="email=no" />
+  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <meta name="x-apple-disable-message-reformatting" />
+  <!-- WEB FONT - @font-face : BEGIN -->
+  <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+  <!--[if mso]>
+      <style>
+        * { font-family: 'Open Sans', Arial, Helvetica, sans-serif; Arial, sans-serif !important; }
+      </style>
+    <![endif]-->
+  <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+  <!--[if !mso]><!-->
+  <link href="./view.na.dexcom.com_files/css" rel="stylesheet" />
+  <!-- <style type="text/css"> /* If the <link> doesn't work, use the @import */ /* @import url(""); */  /* If there is no linked or imported stylsheet with references to the custom fonts use custom @font-face */ /* @font-face { font-family: "Open Sans"; src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); }*/ </style> -->
+  <!--<![endif]-->
+  <!-- WEB FONT - @font-face : END -->
+  <!-- CSS RESET STYLES : START -->
+  <style type="text/css">
+    /*
+      |--------------------------------------------------------------------------
+      |  CSS RESET STYLES
+      |--------------------------------------------------------------------------
+      |
+      |  Reset styles are a series of common code resets and fixes
+      |  for a variety of email clients used to create a clean slate for
+      |  email design and development.
+      |
+      |  Note:Reset styles work within the style block and should not
+      |  be inlined.
+      |
+      */
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      -webkit-font-smoothing: antialiased !important;
+      -moz-osx-font-smoothing: auto !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      border-spacing: 0;
+      font-size: 0;
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+
+    table table table {
+      table-layout: auto;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* What it does: A work-around for email clients meddling in triggered links. */
+    *[x-apple-data-detectors],
+    /* iOS */
+    .x-gmail-data-detectors,
+    /* Gmail */
+    .x-gmail-data-detectors *,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif, inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+      display: none !important;
+    }
+
+    /* What it does: Prevents underlining the button text in Windows 10 */
+    a .button-green-link,
+    a .button-black-link {
+      text-decoration: none !important;
+      text-transform: uppercase;
+    }
+
+    a .link-link {
+      text-decoration: none !important;
+      text-transform: uppercase;
+    }
+
+    a.underline {
+      text-decoration: underline;
+    }
+
+    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+    /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+
+      /* iPhone 6 and 6+ */
+      .email-container {
+        min-width: 375px !important;
+      }
+    }
+  </style>
+  <!-- CSS RESET STYLES : END -->
+  <!-- VIDEO STYLES : START -->
+  <style>
+    /* video */
+    .video-wrapper {
+      display: none;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width: 1024px) {
+      .video-wrapper {
+        display: block !important;
+      }
+
+      .video-fallback {
+        display: none !important;
+      }
+    }
+
+    /*@supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+      div[class^=video-wrapper] {
+      display: block !important;
+      }
+      div[class^=video-fallback] {
+      display: none !important;
+      }
+      }*/
+    #MessageViewBody .video-wrapper {
+      display: block !important;
+    }
+
+    #MessageViewBody .video-fallback {
+      display: none !important;
+    }
+  </style>
+  <!-- VIDEO STYLES : END -->
+  <!-- RESPONSIVE STYLES : START -->
+  <style>
+    /* What it does: Hover styles for buttons */
+    .button-green-td,
+    .button-green-link,
+    .button-black-td,
+    .button-black-a {
+      transition: all 100ms ease-in;
+    }
+
+    .link-td,
+    .link-a {
+      transition: all 100ms ease-in;
+    }
+
+    .section:hover .link-green-td,
+    .section:hover .link-green-a,
+    .section:hover .link-white-td,
+    .section:hover .link-white-a {
+      color: #3e3e3e !important;
+    }
+
+    .button-green-td:hover,
+    .button-green-link:hover {
+      background: #3e3e3e !important;
+      border-color: #3e3e3e !important;
+    }
+
+    .button-green-td:hover .button-yellow-link,
+    .button-green-link:hover .button-yellow-link {
+      color: #ffffff !important;
+    }
+
+    .button-black-td:hover,
+    .button-black-a:hover {
+      background: #3e3e3e !important;
+      border-color: #3e3e3e !important;
+    }
+
+    .button-white-td:hover .button-black-link,
+    .button-black-a:hover .button-black-link {
+      color: #58a618 !important;
+    }
+
+    .link-white-td:hover,
+    .link-white a:hover {
+      color: #3e3e3e !important;
+    }
+
+    .link-green-td:hover,
+    .link-green-a:hover {
+      color: #3e3e3e !important;
+    }
+
+    .link-black:hover,
+    .link-green:hover {
+      border-bottom: 3px solid #58a618 !important;
+    }
+
+    .link-td:hover,
+    .link-a:hover {
+      text-decoration: none !important;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 599px) {
+
+      /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+      .fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      /* What it does: Forces table cells into full-width rows. */
+      .stack-column,
+      .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+      }
+
+      /* And center justify these ones. */
+      .stack-column-center {
+        text-align: center !important;
+      }
+
+      /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+      .mobile-center {
+        text-align: center !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+      }
+
+      table.mobile-center {
+        display: inline-block !important;
+      }
+
+      .clear-padding {
+        padding: 0px !important;
+      }
+
+      .mobile-padding {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+    }
+  </style>
+  <!-- RESPONSIVE STYLES : END -->
+  <!-- What it does: Makes background images in 72dpi Outlook render at correct size. -->
+  <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+</head>
+
+<body bgcolor="#ffffff" style="mso-line-height-rule: exactly">
+  <style type="text/css">
+    div.preheader {
+      display: none !important;
+    }
+  </style>
+  <div class="preheader" style="font-size: 1px; display: none !important">
+    Thank you for choosing Dexcom CGM!
+  </div>
+  <!-- <center> allows us to center the email, even in old email clients. -->
+  <center style="width: 100%; text-align: left; background: #ffffff">
+    <div class="email-container" style="margin: auto">
+      <table class="email-container" role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"
+        width="100%">
+        <!-- AMPSCRIPT : START -->
+        <tbody>
+          <tr>
+            <td>
+              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Use Marketing Cloud's HTML default content block -->
+                      <!---->
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                        class="stylingblock-content-wrapper">
+                        <tbody>
+                          <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner">
+                              <!---->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!---->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+          <!-- AMPSCRIPT: END -->
+          <!-- AMPSCRIPT : START -->
+          <tr>
+            <td>
+              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Use Marketing Cloud's HTML default content block -->
+                      <!---->
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                        class="stylingblock-content-wrapper">
+                        <tbody>
+                          <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner">
+                              <!--  -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!---->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+          <!-- AMPSCRIPT: END -->
+          <!-- DYNAMIC QUERY STRING : START -->
+          <tr>
+            <td>
+              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Use Marketing Cloud's HTML default content block -->
+                      <!---->
+                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                        class="stylingblock-content-wrapper">
+                        <tbody>
+                          <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner">
+                              <!-- QUERY STRING : START -->
+
+                              <!-- QUERY STRING : END -->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!---->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+          <!-- DYNAMIC QUERY STRING: END -->
+          <!-- PREHEADER : START -->
+          <tr>
+            <td>
+              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- Visually Hidden Preheader Text : BEGIN -->
+                      <!-- NOTE: The Preaheader variable is used for dynamic preheaders. Always use '@Preheader' for the variable name. -->
+                      <div
+                        style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: &#39;Open Sans&#39; Arial, Helvetica, sans-serif; sans-serif;">
+                      </div>
+                      <!-- Insert &zwnj;&nbsp; hack to clean up up preview text -->
+
+                      <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: &#39;Open Sans&#39;, Arial, Helvetica, sans-serif;sans-serif;">
+                        &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+                        ‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+                        ‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+                        ‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+                      </div>
+                      <!-- Visually Hidden Preheader Text : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+          <!-- PREHEADER: END -->
+          <!-- HEADER : START -->
+          <tr>
+            <td>
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- HEADER LOGO CENTER : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #0db02b;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="
+                                          padding-top: 0px;
+                                          padding-bottom: 15px;
+                                          padding-left: 0px;
+                                          padding-right: 0px;
+                                        ">
+                                      <!-- CENTER ALIGNED HEADER LOGO : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                        style="background-color: #ffffff" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" style="
+                                                  padding-top: 15px;
+                                                  padding-bottom: 15px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #434141;
+                                                  font-weight: 400;
+                                                  font-size: 14px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 20px;
+                                                " valign="top">
+                                              To view this email as a web
+                                              page, click
+                                              <a href="https://view.na.dexcom.com/?qs=9255a4fac89ab98c87bd905791e3234598f1cc6d3b6d009a2928cc3dbf279d8cd80e8fe77b1fd4b7b6425ca5fbe6c00becb077259942335d171b97941fb0e8b91b1cb8ce248e346169e21c3f974e5c72"
+                                                style="
+                                                    text-decoration: none;
+                                                    color: #0db02b;
+                                                  ">here</a>.
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- CENTER ALIGNED HEADER LOGO : END -->
+                                      <!-- CENTER ALIGNED HEADER LOGO : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                        style="background-color: #0db02b" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" style="
+                                                  padding-top: 15px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                " valign="top">
+                                              <a href="https://click.na.dexcom.com/?qs=3197cc918f5401fb48637304afe6ed00aa54470ec905035ee9bce4994ef983f907d6b5b933263e8d3962edda4c4cc183bbeb7ba79480a3b1"
+                                                target="_blank"><img alt="Dexcom Continuous Glucose Monitoring"
+                                                  border="0"
+                                                  src="./view.na.dexcom.com_files/76731401-34cf-4edb-b7a7-65b62dbba8ad.png"
+                                                  style="width: 210px" width="210" />
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- CENTER ALIGNED HEADER LOGO : END -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- HEADER LOGO CENTER : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+            </td>
+          </tr>
+          <!-- HEADER : END -->
+          <!-- BODY : START -->
+          <tr>
+            <td>
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BANNER 5 - HEADING 1/COPY/LINK : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #ffffff;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td class="mobile-padding" style="
+                                          padding-top: 25px;
+                                          padding-bottom: 25px;
+                                          padding-left: 40px;
+                                          padding-right: 40px;
+                                        ">
+                                      <!-- HEADING 3 : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center"
+                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#434141; text-align:center; padding-top: 0px;padding-bottom:10px;padding-left:0px;padding-right:0px; font-weight:400; font-size:16px; mso-line-height-rule:exactly; line-height:24px;">
+                                              <strong>ORDER #12937677</strong>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- HEADING 3 : END -->
+                                      <!-- HEADING 1 : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center"
+                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#0db02b; text-align:center; padding-top: 0px;padding-bottom:0px;padding-left:0px;padding-right:0px; font-weight:400; font-size:42px; mso-line-height-rule:exactly; line-height:50px;">
+                                              Your Dexcom Replacement Has
+                                              Arrived
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- HEADING 1 : END -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BANNER 5 - HEADING 1/COPY/LINK : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BODY COPY - FULL WIDTH : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #f9c5c5;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td class="mobile-padding" style="
+                                          padding-top: 25px;
+                                          padding-bottom: 22px;
+                                          padding-left: 60px;
+                                          padding-right: 60px;
+                                        ">
+                                      <!-- HEADING 3 : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center" style="
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #434141;
+                                                  text-align: center;
+                                                  padding-top: 0px;
+                                                  padding-bottom: 10px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-weight: 400;
+                                                  font-size: 14px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 14px;
+                                                  text-transform: uppercase;
+                                                "></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- HEADING 3 : END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#808285; text-align:center;padding-top: 0px;padding-bottom: 10px;padding-left: 0px;padding-right: 0px; font-weight:400; font-size:16px; mso-line-height-rule:exactly; line-height:20px;">
+                                              Hi Charles,<br />
+                                              We wanted to let you know that
+                                              your Dexcom replacement has been
+                                              delivered to:<br />
+                                              <br />
+                                              5146 E Ponce De Leon Ave Apt
+                                              T<br />
+                                              Stone Mountain, GA, 30083, US
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="p" style="
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #89f911;
+                                                  text-align: left;
+                                                  padding: 0;
+                                                  font-weight: 700;
+                                                  font-size: 16px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 22px;
+                                                  padding-right: 15px;
+                                                " width="30%">
+                                              &nbsp;
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BODY - 2 COLUMN [TABLE ELEMENTS] : START -->
+                      <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px"
+                        width="100%">
+                        <tbody>
+                          <tr>
+                            <td align="center" valign="top">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="order-information"
+                                style="
+                                    border: 1px solid #ccc;
+                                    border-bottom: none;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" class="section" style="padding: 10px 0" valign="top"
+                                      width="100%">
+                                      <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="570"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                        style="max-width: 570px" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" valign="top">
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="area column-padding" style="padding: 10px">
+                                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td class="h2" style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #000000;
+                                                                  text-align: left;
+                                                                  font-weight: 400;
+                                                                  font-size: 14px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 23px;
+                                                                ">
+                                                              SR #
+                                                            </td>
+                                                            <td class="p"
+                                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#808285; text-align:left; padding:8px 0 0; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:22px;"
+                                                              width="70%">
+                                                              221125-008467
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="h2" style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #000000;
+                                                                  text-align: left;
+                                                                  font-weight: 400;
+                                                                  font-size: 14px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 23px;
+                                                                ">
+                                                              Order #
+                                                            </td>
+                                                            <td class="p"
+                                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#808285; text-align:left; padding:8px 0 0; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:22px;"
+                                                              width="70%">
+                                                              12937677
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="h2" style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #000000;
+                                                                  text-align: left;
+                                                                  font-weight: 400;
+                                                                  font-size: 14px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 23px;
+                                                                ">
+                                                              Tracking Details
+                                                            </td>
+                                                            <td class="p"
+                                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#808285; text-align:left; padding:8px 0 0; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:22px;"
+                                                              width="70%">
+                                                              <a
+                                                                href="https://click.na.dexcom.com/?qs=aa04b5abb491eb8aacf191eef06078a9103868f5b5524baaa6065f54c88d548db9b922d55ae31fc91a981afe4e8294f264364dc7420fe010"><strong>Click
+                                                                  here
+                                                                  to track
+                                                                  your order
+                                                                </strong></a>
+                                                            </td>
+                                                          </tr>
+                                                          <tr></tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BODY - 2 COLUMN [TABLE ELEMENTS] : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BODY - 2 COLUMN [TABLE ELEMENTS] : START -->
+                      <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table style="max-width: 600px" width="100%" cellspacing="0" cellpadding="0" border="0"
+                        align="center">
+                        <tbody>
+                          <tr>
+                            <td valign="top" align="center">
+                              <table class="order-information" style="border: 1px solid #ccc" width="100%"
+                                cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tbody>
+                                  <tr>
+                                    <td class="section" style="padding: 20px 0 0" width="100%" valign="top"
+                                      align="center">
+                                      <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="550"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                                      <table style="max-width: 550px" width="100%" cellspacing="0" cellpadding="0"
+                                        border="0" align="center">
+                                        <tbody>
+                                          <tr>
+                                            <td class="h2" style="
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #000000;
+                                                  text-align: left;
+                                                  font-weight: 400;
+                                                  font-size: 19px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 23px;
+                                                ">
+                                              Items Delivered
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="section" style="padding: 10px 0" width="100%" valign="top"
+                                      align="center">
+                                      <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="570"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                                      <table style="max-width: 570px" width="100%" cellspacing="0" cellpadding="0"
+                                        border="0" align="center">
+                                        <!---->
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding: 15px 0" valign="top" align="center">
+                                              <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" valign="middle" width="29%"><![endif]-->
+                                              <div class="column" style="
+                                                    display: inline-block;
+                                                    margin: 0 -2px;
+                                                    width: 100%;
+                                                    vertical-align: middle;
+                                                    max-width: 165px;
+                                                  ">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center">
+                                                        <img alt="" class="mobile-hide"
+                                                          src="./view.na.dexcom.com_files/dexcom_product_g6_sensor.png"
+                                                          style="
+                                                              height: auto;
+                                                              border: 0;
+                                                              font-family: Arial,
+                                                                Helvetica,
+                                                                sans-serif;
+                                                              font-weight: 400;
+                                                              font-size: 16px;
+                                                              color: #808285;
+                                                              display: block;
+                                                              max-width: 75px;
+                                                              margin: auto;
+                                                            " width="75" border="0" />
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                              <!--[if (gte mso 9)|(IE)]></td><td align="left" valign="middle" width="71%"><![endif]-->
+                                              <div class="column" style="
+                                                    display: inline-block;
+                                                    margin: 0 -2px;
+                                                    width: 100%;
+                                                    vertical-align: middle;
+                                                    max-width: 405px;
+                                                  ">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td class="h4 item-name mobile-center" style="
+                                                                    font-family: Helvetica,
+                                                                      Arial,
+                                                                      sans-serif;
+                                                                    color: #000000;
+                                                                    text-align: left;
+                                                                    font-weight: 400;
+                                                                    font-size: 16px;
+                                                                    mso-line-height-rule: exactly;
+                                                                    line-height: 20px;
+                                                                    padding-bottom: 5px;
+                                                                  ">
+                                                                Medicare
+                                                                Dexcom G6
+                                                                Sensor 1-Pack
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="h6 item-quantity mobile-center"
+                                                                style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#808285; text-align:left; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:18px;">
+                                                                QTY: 1
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BODY - 2 COLUMN [TABLE ELEMENTS] : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BODY - SPACER : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                        style="max-width: 600px; background: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td align="center" style="
+                                  background-color: #ffffff;
+                                  padding: 15px 0;
+                                " valign="top">
+                              <span style="color: #ffffff">Spacer</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BODY - SPACER: END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BANNER 4 - HEADING 1 : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #ffffff;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table border="0" cellpadding="0" cellspacing="0"
+                                        style="background-color: #0db02b" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#ffffff; text-align:center; padding-top: 10px;padding-bottom: 10px;padding-left: 0px;padding-right: 0px; font-weight: 400; font-size:20px; mso-line-height-rule:exactly; line-height:34px;">
+                                              Dexcom Product Support
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BANNER 4 - HEADING 1 : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- 2 COLUMN GRID - STACKED : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #ffffff;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" class="mobile-padding" style="
+                                          padding-top: 25px;
+                                          padding-bottom: 0px;
+                                          padding-left: 50px;
+                                          padding-right: 50px;
+                                        " valign="top">
+                                      <!--[if (gte mso 9)|(IE)]><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" valign="top" width="50%"><![endif]-->
+                                      <div class="stack-column" style="
+                                            display: inline-block;
+                                            width: 100%;
+                                            vertical-align: top;
+                                            max-width: 50%;
+                                          ">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="
+                                                    padding-top: 0px;
+                                                    padding-bottom: 0px;
+                                                    padding-left: 10px;
+                                                    padding-right: 10px;
+                                                  ">
+                                                <!-- 2 COLUMN IMAGE : START -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>
+                                                        <img alt="Smart device settings" border="0"
+                                                          class="mobile-center"
+                                                          src="./view.na.dexcom.com_files/4fa86b33-c46e-4bcc-9e49-1564c660440a.png"
+                                                          style="
+                                                              height: auto;
+                                                              border: 0;
+                                                              font-family: Helvetica,
+                                                                Arial,
+                                                                sans-serif;
+                                                              font-weight: 400;
+                                                              font-size: 14px;
+                                                              color: #434141;
+                                                              display: block;
+                                                              max-width: 230px;
+                                                            " width="230" />
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- 2 COLUMN IMAGE : END -->
+                                                <!-- HEADING 3 : START -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td class="mobile-center" style="
+                                                            font-family: Helvetica,
+                                                              Arial, sans-serif;
+                                                            color: #434141;
+                                                            text-align: left;
+                                                            padding-top: 20px;
+                                                            padding-bottom: 10px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                            font-weight: 400;
+                                                            font-size: 18px;
+                                                            mso-line-height-rule: exactly;
+                                                            line-height: 24px;
+                                                          ">
+                                                        Smart Device Settings
+                                                        to Avoid with Dexcom
+                                                        CGM
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- HEADING 3 : END -->
+                                                <!-- PARAGRAPH : START -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td class="mobile-center"
+                                                        style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#434141; text-align:left;padding-top: 0px;padding-bottom: 20px;padding-left: 0px;padding-right: 0px; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:20px;">
+                                                        Some smart device
+                                                        settings may interfere
+                                                        with your Dexcom CGM
+                                                        experience in the app
+                                                        or cause product
+                                                        issues. Select your
+                                                        phone device in our
+                                                        recommended smart
+                                                        device settings page
+                                                        below to troubleshoot
+                                                        or prevent phone
+                                                        setting related
+                                                        product issues.
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- PARAGRAPH : END -->
+                                                <!-- BUTTON : BEGIN -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" class="section" style="
+                                                            padding-top: 0px;
+                                                            padding-bottom: 25px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                          ">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                          class="mobile-center">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="
+                                                                    font-family: Helvetica,
+                                                                      Arial,
+                                                                      sans-serif;
+                                                                    color: #434141;
+                                                                    text-align: left;
+                                                                    font-weight: 700;
+                                                                    letter-spacing: 1px;
+                                                                    padding-top: 0px;
+                                                                    padding-bottom: 0px;
+                                                                    padding-left: 0px;
+                                                                    padding-right: 0px;
+                                                                    font-size: 12px;
+                                                                    mso-line-height-rule: exactly;
+                                                                    line-height: 16px;
+                                                                  " valign="middle">
+                                                                <a class="link-green-a link-green"
+                                                                  href="https://click.na.dexcom.com/?qs=3758df950118600aefb9f54573db1e523fa1f66ce2c5d5db014f63dd71fa088cf42eb9857029da8126be8f05f42605a244db6a2d3b21e648"
+                                                                  style="
+                                                                      text-decoration: none;
+                                                                      display: inline-block;
+                                                                      color: #0db02b;
+                                                                      text-decoration: none;
+                                                                      border-bottom: 2px
+                                                                        solid;
+                                                                    ">Optimal
+                                                                  phone
+                                                                  settings</a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- BUTTON : END -->
+                                                <!-- BUTTON : BEGIN -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" class="section" style="
+                                                            padding-top: 0px;
+                                                            padding-bottom: 25px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                          ">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                          class="mobile-center">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="
+                                                                    font-family: Helvetica,
+                                                                      Arial,
+                                                                      sans-serif;
+                                                                    color: #3e3e3e;
+                                                                    text-align: left;
+                                                                    font-weight: 700;
+                                                                    letter-spacing: 1px;
+                                                                    padding-top: 0px;
+                                                                    padding-bottom: 0px;
+                                                                    padding-left: 0px;
+                                                                    padding-right: 0px;
+                                                                    font-size: 12px;
+                                                                    mso-line-height-rule: exactly;
+                                                                    line-height: 16px;
+                                                                  " valign="middle">
+                                                                <a class="link-green-a link-green"
+                                                                  href="https://click.na.dexcom.com/?qs=7b89e21d058777fb657c725b5f8dd8b7d7b5ca921ea9325603bb1dbc3834713e8e2a6b1ed7f5a460dcf3a981636482a30d49b1acfbb68717"
+                                                                  style="
+                                                                      text-decoration: none;
+                                                                      display: inline-block;
+                                                                      color: #0db02b;
+                                                                      text-decoration: none;
+                                                                      border-bottom: 2px
+                                                                        solid;
+                                                                    ">Set up the
+                                                                  G6 iOS 14
+                                                                  widget
+                                                                </a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- BUTTON : END -->
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--[if (gte mso 9)|(IE)]></td><td align="left" valign="top" width="50%"><![endif]-->
+                                      <div class="stack-column" style="
+                                            display: inline-block;
+                                            width: 100%;
+                                            vertical-align: top;
+                                            max-width: 50%;
+                                          ">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                            <tr>
+                                              <td style="
+                                                    padding-top: 0px;
+                                                    padding-bottom: 0px;
+                                                    padding-left: 10px;
+                                                    padding-right: 10px;
+                                                  ">
+                                                <!-- 2 COLUMN IMAGE : START -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>
+                                                        <img alt="Questions about G6" border="0" class="mobile-center"
+                                                          src="./view.na.dexcom.com_files/7d481467-7409-4245-842a-4d5eb5cf6330.png"
+                                                          style="
+                                                              height: auto;
+                                                              border: 0;
+                                                              font-family: Helvetica,
+                                                                Arial,
+                                                                sans-serif;
+                                                              font-weight: 400;
+                                                              font-size: 12px;
+                                                              color: #434141;
+                                                              display: block;
+                                                              max-width: 230px;
+                                                            " width="230" />
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- 2 COLUMN IMAGE : END -->
+                                                <!-- HEADING 3 : START -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td class="mobile-center" style="
+                                                            font-family: Helvetica,
+                                                              Arial, sans-serif;
+                                                            color: #434141;
+                                                            text-align: left;
+                                                            padding-top: 20px;
+                                                            padding-bottom: 10px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                            font-weight: 400;
+                                                            font-size: 18px;
+                                                            mso-line-height-rule: exactly;
+                                                            line-height: 24px;
+                                                          ">
+                                                        You have questions? We
+                                                        have answers!
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- HEADING 3 : END -->
+                                                <!-- PARAGRAPH : START -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td class="mobile-center"
+                                                        style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#434141; text-align:left;padding-top: 0px;padding-bottom: 20px;padding-left: 0px;padding-right: 0px; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:20px;">
+                                                        Did you know you can
+                                                        access the Dexcom Help
+                                                        Center directly within
+                                                        the Dexcom G6 app?
+                                                        Help is just one click
+                                                        or tap away! Below are
+                                                        a couple resources we
+                                                        recommend bookmarking
+                                                        for later.
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- PARAGRAPH : END -->
+                                                <!-- BUTTON : BEGIN -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" class="section" style="
+                                                            padding-top: 0px;
+                                                            padding-bottom: 14px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                          ">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                          class="mobile-center">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="
+                                                                    font-family: Helvetica,
+                                                                      Arial,
+                                                                      sans-serif;
+                                                                    color: #434141;
+                                                                    text-align: left;
+                                                                    font-weight: 700;
+                                                                    letter-spacing: 1px;
+                                                                    padding-top: 0px;
+                                                                    padding-bottom: 0px;
+                                                                    padding-left: 0px;
+                                                                    padding-right: 0px;
+                                                                    font-size: 12px;
+                                                                    mso-line-height-rule: exactly;
+                                                                    line-height: 14px;
+                                                                  " valign="middle">
+                                                                <a class="link-green-a link-green"
+                                                                  href="https://click.na.dexcom.com/?qs=b2d9511559f578f929d83ced4761793dca60fb5ab1c56de820db966ec6fb4e2b222bbd959988bd159dfc57e7317ae70257efdf315d734795"
+                                                                  style="
+                                                                      text-decoration: none;
+                                                                      display: inline-block;
+                                                                      color: #0db02b;
+                                                                      text-decoration: none;
+                                                                      border-bottom: 2px
+                                                                        solid;
+                                                                    ">Avoid
+                                                                  sensor
+                                                                  failures</a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- BUTTON : END -->
+                                                <!-- BUTTON : BEGIN -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" class="section" style="
+                                                            padding-top: 0px;
+                                                            padding-bottom: 14px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                          ">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                          class="mobile-center">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="
+                                                                    font-family: Helvetica,
+                                                                      Arial,
+                                                                      sans-serif;
+                                                                    color: #434141;
+                                                                    text-align: left;
+                                                                    font-weight: 700;
+                                                                    letter-spacing: 1px;
+                                                                    padding-top: 0px;
+                                                                    padding-bottom: 0px;
+                                                                    padding-left: 0px;
+                                                                    padding-right: 0px;
+                                                                    font-size: 12px;
+                                                                    mso-line-height-rule: exactly;
+                                                                    line-height: 14px;
+                                                                  " valign="left">
+                                                                <a class="link-green-a link-green"
+                                                                  href="https://click.na.dexcom.com/?qs=b2d9511559f578f929d83ced4761793dca60fb5ab1c56de820db966ec6fb4e2b222bbd959988bd159dfc57e7317ae70257efdf315d734795"
+                                                                  style="
+                                                                      text-decoration: none;
+                                                                      display: inline-block;
+                                                                      color: #0db02b;
+                                                                      text-decoration: none;
+                                                                      border-bottom: 2px
+                                                                        solid;
+                                                                    ">Reinforce
+                                                                  sensor
+                                                                  adhesive</a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- BUTTON : END -->
+                                                <!-- BUTTON : BEGIN -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td align="center" class="section" style="
+                                                            padding-top: 0px;
+                                                            padding-bottom: 14px;
+                                                            padding-left: 0px;
+                                                            padding-right: 0px;
+                                                          ">
+                                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                          class="mobile-center">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td style="
+                                                                    font-family: Helvetica,
+                                                                      Arial,
+                                                                      sans-serif;
+                                                                    color: #434141;
+                                                                    text-align: left;
+                                                                    font-weight: 700;
+                                                                    letter-spacing: 1px;
+                                                                    padding-top: 0px;
+                                                                    padding-bottom: 0px;
+                                                                    padding-left: 0px;
+                                                                    padding-right: 0px;
+                                                                    font-size: 12px;
+                                                                    mso-line-height-rule: exactly;
+                                                                    line-height: 14px;
+                                                                  " valign="left">
+                                                                <a class="link-green-a link-green"
+                                                                  href="https://click.na.dexcom.com/?qs=64ddabe2b16827685eadf155b007e1460cf24b3653572c4b1dbc33d8001da0b476312539c6a190358c325fcf5a617344c5539bc672d17599"
+                                                                  style="
+                                                                      text-decoration: none;
+                                                                      display: inline-block;
+                                                                      color: #0db02b;
+                                                                      text-decoration: none;
+                                                                      border-bottom: 2px
+                                                                        solid;
+                                                                    ">Prepping
+                                                                  skin for
+                                                                  sensor
+                                                                </a>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <!-- BUTTON : END -->
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- 2 COLUMN GRID - STACKED : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <style type="text/css">
+                        hr {
+                          color: #434141 !important;
+                        }
+                      </style><!-- BODY - SPACER : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                        style="max-width: 600px; background: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td align="center" style="
+                                  background-color: #ffffff;
+                                  padding: 15px 0;
+                                " valign="top">
+                              <hr />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BODY - SPACER: END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+            </td>
+          </tr>
+          <!-- BODY : END -->
+          <!-- FOOTER : START -->
+          <tr>
+            <td align="center">
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- BANNER 4 - HEADING 1 : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #f6f6f6;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td class="mobile-padding" style="
+                                          padding-top: 25px;
+                                          padding-bottom: 25px;
+                                          padding-left: 60px;
+                                          padding-right: 60px;
+                                        ">
+                                      <!-- HEADING 3 : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center" style="
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #434141;
+                                                  text-align: center;
+                                                  padding-top: 0px;
+                                                  padding-bottom: 10px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-weight: 400;
+                                                  font-size: 22px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 26px;
+                                                ">
+                                              Still have questions? Help is
+                                              here
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- HEADING 3 : END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center"
+                                              style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#434141; text-align:center ;padding-top: 0px;padding-bottom: 10px; padding-left: 0px;padding-right: 0px; font-weight:400; font-size:13px; mso-line-height-rule:exactly; line-height:20px;">
+                                              For additional support, visit
+                                              the Dexcom Help Center or submit
+                                              a Technical Support request
+                                              below.
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                      <!-- BUTTON : BEGIN -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="left" class="mobile-center" style="
+                                                  padding-top: 10px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                " valign="top">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                class="mobile-center" role="presentation" style="text-align: center">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="button-green-td" style="
+                                                          background: #137d00;
+                                                          border: 1px solid
+                                                            #137d00;
+                                                          border-radius: 50px;
+                                                          font-family: Helvetica,
+                                                            Arial, sans-serif;
+                                                          font-size: 13px;
+                                                          line-height: 18px;
+                                                          text-align: center;
+                                                          display: block;
+                                                          font-weight: 600;
+                                                          letter-spacing: 1px;
+                                                          padding-top: 10px;
+                                                          padding-bottom: 10px;
+                                                          padding-left: 20px;
+                                                          padding-right: 20px;
+                                                        ">
+                                                      <a class="button-green-link"
+                                                        href="https://click.na.dexcom.com/?qs=e68374c71d82a46448021848595a2422cf82c24d66db5202f836f174634b0bc9cba1529024ddacf51824826d23a1e064c582518fcd632d66"
+                                                        style="
+                                                            text-decoration: none;
+                                                          "><span class="button-yellow-link" style="
+                                                              color: #ffffff;
+                                                            ">Dexcom Help
+                                                          Center</span>
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- BUTTON : END -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="
+                                                  padding-top: 30px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 10px;
+                                                  padding-right: 10px;
+                                                ">
+                                              <!-- HEADING 3 : START -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="mobile-center" style="
+                                                          font-family: Helvetica,
+                                                            Arial, sans-serif;
+                                                          color: #434141;
+                                                          text-align: center;
+                                                          font-weight: 600;
+                                                          letter-spacing: 1px;
+                                                          padding-top: 0px;
+                                                          padding-bottom: 10px;
+                                                          padding-left: 0px;
+                                                          padding-right: 0px;
+                                                          text-transform: uppercase;
+                                                          font-size: 16px;
+                                                          mso-line-height-rule: exactly;
+                                                        ">
+                                                      Global Technical Support
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- HEADING 3 : END -->
+                                              <!-- PARAGRAPH : START -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="mobile-center"
+                                                      style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#434141; text-align:center ;padding-top: 0px;padding-bottom: 10px; padding-left: 0px;padding-right: 0px; font-weight:400; font-size:14px; mso-line-height-rule:exactly; line-height:20px;">
+                                                      Product troubleshooting
+                                                      or replacement
+                                                      inquiries<br />
+                                                      Available 24 hours a
+                                                      day; 7 days a week
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- PARAGRAPH : END -->
+                                              <!-- BUTTON : BEGIN -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center" class="section" style="
+                                                          padding-top: 25px;
+                                                          padding-bottom: 0px;
+                                                          padding-left: 0px;
+                                                          padding-right: 0px;
+                                                        ">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                        class="mobile-center">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #434141;
+                                                                  text-align: center;
+                                                                  font-weight: 700;
+                                                                  letter-spacing: 1px;
+                                                                  padding-top: 0px;
+                                                                  padding-bottom: 10px;
+                                                                  padding-left: 0px;
+                                                                  padding-right: 0px;
+                                                                  font-size: 13px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 16px;
+                                                                " valign="middle">
+                                                              <a class="link-green-a link-green"
+                                                                href="https://click.na.dexcom.com/?qs=ccaa9bc2260fbde2b79302b62c627b25c2dced3a6c657e5f00b7ff252e6ba67712f7512d204c6b08e6d7808b6a65ec1ab87252560b64b537"
+                                                                style="
+                                                                    text-decoration: none;
+                                                                    display: inline-block;
+                                                                    color: #0db02b;
+                                                                    border-bottom: 2px
+                                                                      solid;
+                                                                  ">Request a
+                                                                call back
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- BUTTON : END -->
+                                              <!-- BUTTON : BEGIN -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center" class="section" style="
+                                                          padding-top: 0px;
+                                                          padding-bottom: 0px;
+                                                          padding-left: 0px;
+                                                          padding-right: 0px;
+                                                        ">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                        class="mobile-center">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #434141;
+                                                                  text-align: center;
+                                                                  font-weight: 700;
+                                                                  letter-spacing: 1px;
+                                                                  padding-top: 0px;
+                                                                  padding-bottom: 10px;
+                                                                  padding-left: 0px;
+                                                                  padding-right: 0px;
+                                                                  font-size: 13px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 16px;
+                                                                " valign="middle">
+                                                              <a class="link-green-a link-green"
+                                                                href="https://click.na.dexcom.com/?qs=c6005ac0e89f0ad70dfc0c53f3eef5b3a63638094018424efb13c5a5929f525c313c21c07693b38f0a6371df99d81e471f552c84b19d5a6f"
+                                                                style="
+                                                                    text-decoration: none;
+                                                                    display: inline-block;
+                                                                    color: #0db02b;
+                                                                    border-bottom: 2px
+                                                                      solid;
+                                                                  ">Submit a
+                                                                patient
+                                                                support
+                                                                request
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- BUTTON : END -->
+                                              <!-- BUTTON : BEGIN -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center" class="section" style="
+                                                          padding-top: 0px;
+                                                          padding-bottom: 0px;
+                                                          padding-left: 0px;
+                                                          padding-right: 0px;
+                                                        ">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                        class="mobile-center">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #434141;
+                                                                  text-align: center;
+                                                                  font-weight: 700;
+                                                                  letter-spacing: 1px;
+                                                                  padding-top: 0px;
+                                                                  padding-bottom: 10px;
+                                                                  padding-left: 0px;
+                                                                  padding-right: 0px;
+                                                                  font-size: 13px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 16px;
+                                                                " valign="middle">
+                                                              <a class="link-green-a link-green"
+                                                                href="https://click.na.dexcom.com/?qs=5f67263f8f80eeff9515a97402b176f32605f5d2bd99eaca2a90f5a953815f1570678f17bf48f56ca3940085c7e44f2d2d95590401e3b104"
+                                                                style="
+                                                                    text-decoration: none;
+                                                                    display: inline-block;
+                                                                    color: #0db02b;
+                                                                    border-bottom: 2px
+                                                                      solid;
+                                                                  ">Submit an
+                                                                overpatch
+                                                                request
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- BUTTON : END -->
+                                              <!-- BUTTON : BEGIN -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center" class="section" style="
+                                                          padding-top: 0px;
+                                                          padding-bottom: 0px;
+                                                          padding-left: 0px;
+                                                          padding-right: 0px;
+                                                        ">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                        class="mobile-center">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="
+                                                                  font-family: Helvetica,
+                                                                    Arial,
+                                                                    sans-serif;
+                                                                  color: #434141;
+                                                                  text-align: center;
+                                                                  font-weight: 700;
+                                                                  letter-spacing: 1px;
+                                                                  padding-top: 0px;
+                                                                  padding-bottom: 10px;
+                                                                  padding-left: 0px;
+                                                                  padding-right: 0px;
+                                                                  font-size: 13px;
+                                                                  mso-line-height-rule: exactly;
+                                                                  line-height: 16px;
+                                                                " valign="middle">
+                                                              <a class="link-green-a link-green"
+                                                                href="https://click.na.dexcom.com/?qs=07aa5df01cd7baf7c12c5804186657ec63534892cda6b25045730bb603e29c06ad81ee015ccbebfa048f5e1ac6a0585595d502e8d32b2c91"
+                                                                style="
+                                                                    text-decoration: none;
+                                                                    display: inline-block;
+                                                                    color: #0db02b;
+                                                                    border-bottom: 2px
+                                                                      solid;
+                                                                  ">Chat live
+                                                                with Dexcom
+                                                                tech support
+                                                              </a>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- BUTTON : END -->
+                                              <!-- PARAGRAPH : Start -->
+                                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="mobile-center"
+                                                      style="font-family: &#39;Helvetica Light&#39;, Helvetica, Arial, sans-serif; color:#434141; text-align:center ;padding-top: 0px;padding-bottom: 10px; padding-left: 0px;padding-right: 0px; font-weight:400; font-size:13px; mso-line-height-rule:exactly; line-height:20px;">
+                                                      (At this time, live chat
+                                                      is only available to US
+                                                      customers, Monday-Sunday
+                                                      from 5AM-5PM PST.)
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- PARAGRAPH : END -->
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if (gte mso 9)|(IE)]></td><td align="left" valign="top" width="50%"><![endif]-->
+                                      <!-- BUTTON : END -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- BANNER 4 - HEADING 1 : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- FOOTER 2 - SOCIAL CENTER : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #f6f6f6;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td class="mobile-padding" style="
+                                          padding-top: 25px;
+                                          padding-bottom: 0px;
+                                          padding-left: 60px;
+                                          padding-right: 60px;
+                                          border-top: 3px solid #0db02b;
+                                        ">
+                                      <!-- PARAGRAPH : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="fluid"
+                                        role="presentation" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="
+                                                  -webkit-text-size-adjust: 100%;
+                                                  -ms-text-size-adjust: 100%;
+                                                  -webkit-font-smoothing: antialiased;
+                                                  mso-table-lspace: 0pt;
+                                                  mso-table-rspace: 0pt;
+                                                  padding-top: 10px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  font-size: 12px;
+                                                  font-weight: 400;
+                                                  line-height: 18px;
+                                                  text-align: left;
+                                                  color: #434141;
+                                                  background-color: transparent;
+                                                  mso-line-height-rule: exactly;
+                                                ">
+                                              LBL021952 Rev001
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- FOOTER 2 - SOCIAL CENTER : END -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+              <!---->
+              <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%"
+                class="stylingblock-content-wrapper">
+                <tbody>
+                  <tr>
+                    <td class="stylingblock-content-wrapper camarker-inner">
+                      <!-- FOOTER - COMMERCIAL : START -->
+                      <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                        style="background-color: #ffffff" width="100%">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <!--[if (gte mso 9)|(IE)]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="width: 600px;"><tr><td align="center" valign="top" width="100%"><![endif]-->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="
+                                    max-width: 600px;
+                                    background-color: #f6f6f6;
+                                  " width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td class="mobile-padding" style="
+                                          padding-top: 0px;
+                                          padding-bottom: 50px;
+                                          padding-left: 60px;
+                                          padding-right: 60px;
+                                        ">
+                                      <!-- BODY - SPACER : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                        style="background: #f6f6f6" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" style="padding-top: 25px" valign="top">
+                                              <hr />
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- BODY - SPACER: END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center" style="
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #434141;
+                                                  text-align: center;
+                                                  padding-top: 30px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-weight: 700;
+                                                  font-size: 14px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 18px;
+                                                ">
+                                              <a href="https://click.na.dexcom.com/?qs=9ddceb42b52723509b987ceb96772cca83677799175137dbaf631f2589a54800a022085ef40f94eac3a79974ee60826cf6b264190de3cc14"
+                                                style="
+                                                    color: #434141;
+                                                    text-decoration: none;
+                                                  ">Help Center</a>&nbsp; | &nbsp;
+                                              <a href="https://click.na.dexcom.com/?qs=6ed87c73625ddae87a2c4047ef206610a770c7b08ae89233d8fce77bf68bb0962e0ad7c3dd897027a983e98726c5fb54f1c9b2bb3c82cf72"
+                                                style="
+                                                    color: #434141;
+                                                    text-decoration: none;
+                                                  ">Warriors</a>&nbsp; | &nbsp;
+                                              <a href="https://click.na.dexcom.com/?qs=8ea2375c2868fb39ba07b0b86a96af21451f9a6f8cb2b4e7bdb57d79e8534ea578cb6753a8feee1a19b3d96978b35c11476b512dcbc64104"
+                                                style="
+                                                    color: #434141;
+                                                    text-decoration: none;
+                                                  ">Contact Us</a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                      <!-- FOOTER SOCIAL LINKS : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                        role="presentation" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" style="
+                                                  padding-top: 20px;
+                                                  padding-bottom: 0;
+                                                  padding-left: 0;
+                                                  padding-right: 0;
+                                                ">
+                                              <!-- Social Media Links : Start -->
+                                              <table border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td align="center" style="
+                                                          -webkit-text-size-adjust: 100%;
+                                                          -ms-text-size-adjust: 100%;
+                                                          -webkit-font-smoothing: antialiased;
+                                                          mso-table-lspace: 0pt;
+                                                          mso-table-rspace: 0pt;
+                                                          padding-left: 4px;
+                                                          padding-right: 4px;
+                                                          width: 40px;
+                                                        " valign="middle" width="40">
+                                                      <a href="https://click.na.dexcom.com/?qs=0985145ddbbf3d20cdf41ce56a4dd13b805794b22289a701f24fe03f303dd573f8951dd4c0d34e1a204fbd39a76f276f16f449e99c300f89"
+                                                        target="_blank"><img alt="Facebook" border="0" height="30"
+                                                          hspace="0"
+                                                          src="./view.na.dexcom.com_files/9d530969-328f-46c5-b9d7-406959ad23c2.png"
+                                                          style="
+                                                              -ms-interpolation-mode: bicubic;
+                                                              border: 0;
+                                                              height: auto;
+                                                              line-height: 100%;
+                                                              outline: none;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                Arial,
+                                                                sans-serif;
+                                                              font-size: 12px;
+                                                              font-weight: normal;
+                                                            " vspace="0" width="30" /></a>
+                                                    </td>
+                                                    <td align="center" style="
+                                                          -webkit-text-size-adjust: 100%;
+                                                          -ms-text-size-adjust: 100%;
+                                                          -webkit-font-smoothing: antialiased;
+                                                          mso-table-lspace: 0pt;
+                                                          mso-table-rspace: 0pt;
+                                                          padding-left: 4px;
+                                                          padding-right: 4px;
+                                                          width: 40px;
+                                                        " valign="middle" width="40">
+                                                      <a href="https://click.na.dexcom.com/?qs=921a192e3024b2256502012212e9632b80e8be6a632507c6b6ff5b99c51f5d77a8b8b0bd3e5fdc65e54ae58bcee2ed128d4b836cb6e64a0e"
+                                                        target="_blank"><img alt="LinkedIn" border="0"
+                                                          class="sm-icon-img white" height="30" hspace="0"
+                                                          src="./view.na.dexcom.com_files/95e01129-d712-4178-829b-705c44995ccd.png"
+                                                          style="
+                                                              -ms-interpolation-mode: bicubic;
+                                                              border: 0;
+                                                              height: auto;
+                                                              line-height: 100%;
+                                                              outline: none;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                Arial,
+                                                                sans-serif;
+                                                              font-size: 12px;
+                                                              font-weight: normal;
+                                                            " vspace="0" width="30" /></a>
+                                                    </td>
+                                                    <td align="center" style="
+                                                          -webkit-text-size-adjust: 100%;
+                                                          -ms-text-size-adjust: 100%;
+                                                          -webkit-font-smoothing: antialiased;
+                                                          mso-table-lspace: 0pt;
+                                                          mso-table-rspace: 0pt;
+                                                          padding-left: 4px;
+                                                          padding-right: 4px;
+                                                          width: 40px;
+                                                        " valign="middle" width="40">
+                                                      <a href="https://click.na.dexcom.com/?qs=f8a5554041639ed0138a6da85446b7de303efea625d3710b51dee37009d30e5a89d2308d84cca836b5c116cd22f5a954f45b458b19be4d91"
+                                                        target="_blank"><img alt="Instagram" border="0"
+                                                          class="sm-icon-img white" height="30" hspace="0"
+                                                          src="./view.na.dexcom.com_files/d4871c9b-fcb5-4768-8e9a-ca248934655b.png"
+                                                          style="
+                                                              -ms-interpolation-mode: bicubic;
+                                                              border: 0;
+                                                              height: auto;
+                                                              line-height: 100%;
+                                                              outline: none;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                Arial,
+                                                                sans-serif;
+                                                              font-size: 12px;
+                                                              font-weight: normal;
+                                                            " vspace="0" width="30" /></a>
+                                                    </td>
+                                                    <td align="center" style="
+                                                          -webkit-text-size-adjust: 100%;
+                                                          -ms-text-size-adjust: 100%;
+                                                          -webkit-font-smoothing: antialiased;
+                                                          mso-table-lspace: 0pt;
+                                                          mso-table-rspace: 0pt;
+                                                          padding-left: 4px;
+                                                          padding-right: 4px;
+                                                          width: 40px;
+                                                        " valign="middle" width="40">
+                                                      <a href="https://click.na.dexcom.com/?qs=c9a510a2cd7bc9f281a55c8f7e72c829166024a311455486c3d45d651f783e9bf59624f6f1719fdee3114069b2be6b0c21b84d3567d42ae9"
+                                                        target="_blank"><img alt="YouTube" border="0"
+                                                          class="sm-icon-img white" height="30" hspace="0"
+                                                          src="./view.na.dexcom.com_files/8e1e25b9-8fbe-4008-8fe5-db4ddb515265.png"
+                                                          style="
+                                                              -ms-interpolation-mode: bicubic;
+                                                              border: 0;
+                                                              height: auto;
+                                                              line-height: 100%;
+                                                              outline: none;
+                                                              text-decoration: none;
+                                                              font-family: Helvetica,
+                                                                Arial,
+                                                                sans-serif;
+                                                              font-size: 12px;
+                                                              font-weight: normal;
+                                                            " vspace="0" width="30" /></a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <!-- Social Media Links : End -->
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- FOOTER SOCIAL LINKS : END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="fluid"
+                                        role="presentation" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="
+                                                  -webkit-text-size-adjust: 100%;
+                                                  -ms-text-size-adjust: 100%;
+                                                  -webkit-font-smoothing: antialiased;
+                                                  mso-table-lspace: 0pt;
+                                                  mso-table-rspace: 0pt;
+                                                  padding-top: 20px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  font-size: 12px;
+                                                  line-height: 18px;
+                                                  text-align: center;
+                                                  color: #434141;
+                                                  background-color: transparent;
+                                                  mso-line-height-rule: exactly;
+                                                ">
+                                              This email was sent to:
+                                              <a href="mailto:costoncharles77@gmail.com" style="
+                                                    color: #434141 !important;
+                                                    text-decoration: none !important;
+                                                  ">costoncharles77@gmail.com</a><br />
+                                              Dexcom, Inc. 6340 Sequence Dr.
+                                              San Diego, CA, 92121, US<br />
+                                              We respect your right to privacy
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="fluid"
+                                        role="presentation" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="
+                                                  -webkit-text-size-adjust: 100%;
+                                                  -ms-text-size-adjust: 100%;
+                                                  -webkit-font-smoothing: antialiased;
+                                                  mso-table-lspace: 0pt;
+                                                  mso-table-rspace: 0pt;
+                                                  padding-top: 20px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  font-size: 12px;
+                                                  line-height: 18px;
+                                                  text-align: center;
+                                                  color: #434141;
+                                                  background-color: transparent;
+                                                  mso-line-height-rule: exactly;
+                                                ">
+                                              Dexcom, Dexcom G6, Dexcom Share,
+                                              and Dexcom CLARITY are
+                                              registered trademarks of Dexcom,
+                                              Inc. in the U.S., and may be
+                                              registered in other
+                                              countries.<br />
+                                              © 2022 Dexcom, Inc. All rights
+                                              reserved.
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="mobile-center" style="
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  color: #434141;
+                                                  text-align: center;
+                                                  padding-top: 20px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-weight: 700;
+                                                  font-size: 11px;
+                                                  mso-line-height-rule: exactly;
+                                                  line-height: 15px;
+                                                ">
+                                              <a href="https://click.na.dexcom.com/?qs=a578a782f9d280252b95c9410c9ababfe29e3cfa11cc2a2de193af82db8e25b68f93f3f6286b6d30936b16e31ef2f1b8399ffe601100fa74"
+                                                style="
+                                                    color: #434141;
+                                                    text-decoration: none;
+                                                  ">Terms of Use</a>&nbsp; | &nbsp;
+                                              <a href="https://click.na.dexcom.com/?qs=f73c1ec9c09cd6c001b4b5b6c0021feaec1fd46917f306ba7d5952703e09dec8bdcfd827faa370223f300a92be9821222392e5d899f07fa6"
+                                                style="
+                                                    color: #434141;
+                                                    text-decoration: none;
+                                                  ">Privacy Policy</a>&nbsp; | &nbsp;
+                                              <a href="https://click.na.dexcom.com/profile_center.aspx?qs=7f60ebc5d55bc32e499b3a3f2f145231c5ab0102a65abd07b9e74453767ccf81e5e0be0e8491e15c38612fd2bbc740c83d3044b62fb0119897c3bc2f4644031cbfb7b9510d4a0d20"
+                                                style="
+                                                    color: #434141;
+                                                    text-decoration: none;
+                                                  ">Update Profile</a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                      <!-- PARAGRAPH : START -->
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" class="fluid"
+                                        role="presentation" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="
+                                                  -webkit-text-size-adjust: 100%;
+                                                  -ms-text-size-adjust: 100%;
+                                                  -webkit-font-smoothing: antialiased;
+                                                  mso-table-lspace: 0pt;
+                                                  mso-table-rspace: 0pt;
+                                                  padding-top: 20px;
+                                                  padding-bottom: 0px;
+                                                  padding-left: 0px;
+                                                  padding-right: 0px;
+                                                  font-family: Helvetica, Arial,
+                                                    sans-serif;
+                                                  font-size: 12px;
+                                                  line-height: 18px;
+                                                  text-align: center;
+                                                  color: #434141;
+                                                  background-color: transparent;
+                                                  mso-line-height-rule: exactly;
+                                                ">
+                                              You are receiving this important
+                                              account and/or service
+                                              notification in regard to a
+                                              previous commercial transaction.
+                                              You are a valued Dexcom
+                                              customer. This is not a
+                                              promotional message.
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!-- PARAGRAPH : END -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                      <!-- FOOTER - COMMERCIAL : END -->
+                      <style data-ignore-inlining="">
+                        @media (prefers-color-scheme: dark) {
+                          #_t::before {
+                            content: url("https://te8unzmw.emltrk.com/v2/te8unzmw?rd&i=46288975");
+                          }
+                        }
+
+                        @media (prefers-color-scheme: light) {
+                          #_t::before {
+                            content: url("https://te8unzmw.emltrk.com/v2/te8unzmw?rl&i=46288975
+ ");
+
+                            }
+                          }
+
+                          @media print {
+                            #_t {
+                              background-image: url(" https: //te8unzmw.emltrk.com/v2/te8unzmw?p&i=46288975");
+                            }
+                          }
+
+                          div.OutlookMessageHeader {
+                            background-image: url("https://te8unzmw.emltrk.com/v2/te8unzmw?f&i=46288975");
+                          }
+
+                          table.moz-email-headers-table {
+                            background-image: url("https://te8unzmw.emltrk.com/v2/te8unzmw?f&i=46288975");
+                          }
+
+                          blockquote #_t {
+                            background-image: url("https://te8unzmw.emltrk.com/v2/te8unzmw?f&i=46288975");
+                          }
+
+                          #MailContainerBody #_t {
+                            background-image: url("https://te8unzmw.emltrk.com/v2/te8unzmw?f&i=46288975");
+                          }
+                      </style>
+                      <div id="_t"></div>
+                      <img src="./view.na.dexcom.com_files/te8unzmw" width="1" height="1" border="0" alt="" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---->
+            </td>
+          </tr>
+          <!-- FOOTER : END -->
+        </tbody>
+      </table>
+      <div style="display: none">
+        <table role="presentation" style="display: none">
+          <tbody>
+            <tr>
+              <td>
+                <font face="verdana" size="1" color="#444444" style="display: none">
+                  <b>Dexcom, Inc. </b>
+                  <br />6340 Sequence Dr. San Diego, CA, 92121, US
+                  <br />
+                  <br />
+                </font>
+                <a
+                  href="https://click.na.dexcom.com/profile_center.aspx?qs=7f60ebc5d55bc32e499b3a3f2f145231c5ab0102a65abd07b9e74453767ccf81e5e0be0e8491e15c38612fd2bbc740c83d3044b62fb01198cf8cf00dff14704dd58b1fcededff419">Update
+                  Profile</a>
+                <img src="./view.na.dexcom.com_files/open.aspx" width="1" height="1" alt="" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>
