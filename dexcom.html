@@ -22,189 +22,16 @@
 
   <style type="text/css">
     /* If the <link> doesn't work, use the @import */
-    /* @import url(""); */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&family=Open+Sans:wght@300;400;600;800&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
   </style>
-  <style type="text/css">
-    /*
-      
-      |  CSS RESET STYLES
-     
-      |  Note:Reset styles work within the style block and should not
-      |  be inlined.
-      |
-      */
-    /* What it does: Remove spaces around the email design added by some email clients. */
-    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-    /* html,
-    body {
-      margin: 0 auto !important;
-      padding: 0 !important;
-      height: 100% !important;
-      width: 100% !important; 
-       -webkit-font-smoothing: antialiased !important; 
-      -moz-osx-font-smoothing: auto !important;
-    } */
+ 
 
-    /* What it does: Stops email clients resizing small text. */
-    /* * {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-    } */
-
-    /* What it does: Stops Outlook from adding extra spacing to tables. */
-    /* table,
-    td {
-      border-spacing: 0;
-      font-size: 0;
-      mso-table-lspace: 0pt !important;
-      mso-table-rspace: 0pt !important;
-    } */
-
-    /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
-    /* table {
-      border-spacing: 0 !important;
-      border-collapse: collapse !important;
-      table-layout: fixed !important;
-      margin: 0 auto !important;
-    }
-
-    table table table {
-      table-layout: auto;
-    } */
-
-    /* What it does: Uses a better rendering method when resizing images in IE. */
-    /* img {
-      -ms-interpolation-mode: bicubic;
-      border: 0;
-      height: auto;
-      line-height: 100%;
-      outline: none;
-      text-decoration: none;
-      display: block;
-    } */
-
-    /* What it does: A work-around for email clients meddling in triggered links. */
-    /* *[x-apple-data-detectors], */
-    /* iOS */
-    /* .x-gmail-data-detectors, */
-    /* Gmail */
-    /* .x-gmail-data-detectors *,
-    .aBn {
-      border-bottom: 0 !important;
-      cursor: default !important;
-      color: inherit !important;
-      text-decoration: none !important;
-      font-size: inherit !important;
-      font-family: "Open Sans", Arial, Helvetica, sans-serif, inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
-    } */
-
-    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
-    /* .a6S {
-      display: none !important;
-      opacity: 0.01 !important;
-    } */
-
-    /* If the above doesn't work, add a .g-img class to any image in question. */
-    /* img.g-img+div {
-      display: none !important;
-    } */
-
-    /* What it does: Prevents underlining the button text in Windows 10 */
-    /* a .button-green-link,
-    a .button-black-link {
-      text-decoration: none !important;
-      text-transform: uppercase;
-    }
-
-    a .link-link {
-      text-decoration: none !important;
-      text-transform: uppercase;
-    }
-
-    a.underline {
-      text-decoration: underline;
-    } */
-
-    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-    /* Create one of these media queries for each additional viewport size you'd like to fix */
-    /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
-    @media screen and (min-device-width: 375px) and (max-device-width: 413px) {
-
-      /* iPhone 6 and 6+ */
-      .email-container {
-        min-width: 375px !important;
-      }
-    }
-  </style>
-  <!-- CSS RESET STYLES : END -->
-
-  <!-- RESPONSIVE STYLES : START -->
   <style>
-    /* What it does: Hover styles for buttons */
-    /* .button-green-td,
-      .button-green-link,
-      .button-black-td,
-      .button-black-a {
-        transition: all 100ms ease-in;
-      }
-
-      .link-td,
-      .link-a {
-        transition: all 100ms ease-in;
-      }
-
-      .section:hover .link-green-td,
-      .section:hover .link-green-a,
-      .section:hover .link-white-td,
-      .section:hover .link-white-a {
-        color: #3e3e3e !important;
-      }
-
-      .button-green-td:hover,
-      .button-green-link:hover {
-        background: #3e3e3e !important;
-        border-color: #3e3e3e !important;
-      }
-
-      .button-green-td:hover .button-yellow-link,
-      .button-green-link:hover .button-yellow-link {
-        color: #ffffff !important;
-      }
-
-      .button-black-td:hover,
-      .button-black-a:hover {
-        background: #3e3e3e !important;
-        border-color: #3e3e3e !important;
-      }
-
-      .button-white-td:hover .button-black-link,
-      .button-black-a:hover .button-black-link {
-        color: #f0870f !important;
-      }
-
-      .link-white-td:hover,
-      .link-white a:hover {
-        color: #3e3e3e !important;
-      }
-
-      .link-green-td:hover,
-      .link-green-a:hover {
-        color: #3e3e3e !important;
-      }
-
-      .link-black:hover,
-      .link-green:hover {
-        border-bottom: 3px solid #1b0f08 !important;
-      }
-
-      .link-td:hover,
-      .link-a:hover {
-        text-decoration: none !important;
-      } */
-
+   
     /* Media Queries */
+
+
+    /* mobile */
     @media screen and (max-width: 600px) {
       .left-column {
         width: 100%;
@@ -225,55 +52,16 @@
       .right-p {
         padding: 20px 20px 10px 20px !important;
       }
+       .social img{
+        width: 50px !important;
+        height: 50px !important;
+        padding: 20px !important;
+
+      }
     }
 
-    /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
-    /* .fluid {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-      } */
-
-    /* What it does: Forces table cells into full-width rows. */
-    /* .stack-column,
-      .stack-column-center {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        direction: ltr !important;
-      } */
-
-    /* And center justify these ones. */
-    /* .stack-column-center {
-        text-align: center !important;
-      } */
-
-    /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
-    /* .mobile-center {
-        text-align: center !important;
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        float: none !important;
-      } */
-    /* 
-      table.mobile-center {
-        display: inline-block !important;
-      } */
-
-    /* .clear-padding {
-        padding: 0px !important;
-      } */
-
-    /* .mobile-padding {
-        padding-left: 25px !important;
-        padding-right: 25px !important;
-      }
-    } */
+    
   </style>
-  <!-- RESPONSIVE STYLES : END -->
   <!-- What it does: Makes background images in 72dpi Outlook render at correct size. -->
   <!--[if gte mso 9]>
       <xml>
@@ -284,7 +72,7 @@
     <![endif]-->
 </head>
 
-<body style="margin: 0; padding: 0; background-color: #fbf8f8">
+<body style="margin: 0; padding: 0; background-color: #54f269">
   <!-- table start: start of email -->
   <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation" margin="0">
     <tr>
@@ -296,11 +84,13 @@
           <tr>
             <td>
               <!-- start of dexcom banner row-->
-              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+              <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
                 style="background: #0db02b; padding: 15px 0px 0px">
                 <tr>
                   <td align="center">
-                    <a href="#"><img src="https://i.postimg.cc/T3wBFK4t/dexcomheader210.png" alt="Dexcom banner" style="width: 210px" />
+                    <a href="#">
+                      <img src="https://i.postimg.cc/T3wBFK4t/dexcomheader210.png" alt="Dexcom banner"
+                        style="width: 210px" />
                     </a>
                   </td>
                 </tr>
@@ -320,7 +110,6 @@
                         font-family: 'Open Sans', 'Helvetica Neue', Helvetica,
                           Arial, 'Lucida Grande', sans-serif;
                         color: #434141;
-                        padding: 25px 0 10px 0;
                         font-size: 16px;
                         font-weight: 100;
                         text-align: center;
@@ -365,12 +154,12 @@
                         margin: 0;
                         line-height: 22px;
                       ">
-                     <p style="padding: 0 0px 0 0px">
+                    <p >
                       Hi James Jobseeker,<br />We wanted to let you know that
                       your Dexcom replacement has<br />
                       " been delivered to:"<br />
-                     </p>
-                     
+                    </p>
+
                     <p>
                       2022 E. Ponce Deleon Ave. <br />Stone Mountain, GA,
                       30083,<br />
@@ -385,12 +174,12 @@
           <!-- !track order table 4 -->
           <tr>
             <td>
-              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+              <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
                 margin="0" style="border-bottom: 3px solid #776c6c">
                 <tr>
                   <td style="background-color: #ffffff">
-                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
-                      role="presentation" margin="0" style="padding: 15px 40px 25px 0px">
+                    <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                      role="presentation" margin="0" style="padding: 15px 40px 25px 0px;">
                       <tr>
                         <td style="
                               font-family: 'Open Sans', 'Helvetica Neue',
@@ -427,7 +216,6 @@
 
                       <tr>
                         <td style="
-                              font-size: 16px;
                               text-align: center;
                               font-family: 'Open Sans', 'Helvetica Neue',
                                 Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -442,7 +230,6 @@
                         </td>
 
                         <td style="
-                              font-size: 13px;
                               padding: 8px 0 0 0px;
                               font-family: 'Open Sans', 'Helvetica Neue',
                                 Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -452,7 +239,8 @@
                               padding: 8px 0 0 0px;
                             ">
                           <strong>
-                            <a href="#" style="color: #0658fa">Click here to track your order</a></strong>
+                            <a href="#" style="color: #0658fa">Click here to track your order</a>
+                          </strong>
                         </td>
                       </tr>
                     </table>
@@ -464,14 +252,13 @@
           <!-- !items delivered table 5-->
           <tr>
             <td>
-              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+              <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
                 margin="0" style="
-                    padding: 0px 0px 0px 0px;
                     border-bottom: 3px solid #776c6c;
                   ">
                 <tr>
                   <td style="background-color: white">
-                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
                       role="presentation" margin="0" style="padding: 15px 0px 25px 20px">
                       <tr>
                         <td style="
@@ -492,8 +279,7 @@
 
                       <tr>
                         <td style="padding: 10px 0 0 30px">
-                          <img src="https://i.postimg.cc/KzXV1JvW/sensor.png
-" alt="dexcom sensor" style="width: 75px" />
+                          <img src="https://i.postimg.cc/KzXV1JvW/sensor.png" alt="dexcom sensor" style="width: 75px" />
                         </td>
 
                         <td style="
@@ -530,7 +316,7 @@
                 <tr>
                   <td>
                     <!-- start of dexcom banner row-->
-                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
                       role="presentation" style="background: #0db02b; padding: 1px 0px 10px 0px;">
                       <tr>
                         <td align="center" style="
@@ -552,9 +338,8 @@
                     <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
                       role="presentation" style="background: #f4fbf6; padding: 25px 0px 4px 50px;">
                       <tr>
-                        <td>
-                          <img src="https://i.postimg.cc/0jPBfjSd/smartdevice.png
-" width="230" alt="" />
+                        <td style="width:230px;">
+                          <img src="https://i.postimg.cc/0jPBfjSd/smartdevice.png" width="230" alt="picture of a dexcom reading on a cellphone" />
                         </td>
                       </tr>
                       <!--  -->
@@ -605,6 +390,7 @@
                             Optimal phone settings</a>
                         </td>
                       </tr>
+                      <!--  -->
                       <tr>
                         <td style="padding: 15px 0 4px;">
                           <a href="#" style="
@@ -613,7 +399,8 @@
                                 font-family: 'Open Sans', 'Helvetica Neue',
                                   Helvetica, Arial, 'Lucida Grande', sans-serif;
                                 text-decoration: none;
-                                border-bottom: 2px solid green;">Set up the G6 iOS 14 widget</a>
+                                border-bottom: 2px solid green;">Set up the G6 iOS 14 widget
+                          </a>
                         </td>
                       </tr>
                     </table>
@@ -621,9 +408,8 @@
                     <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
                       role="presentation" style="background: #f4fbf6; padding: 25px 50px 4px 0px;">
                       <tr>
-                        <td>
-                          <img src="https://i.postimg.cc/hj9YTTXt/dexcomman.png
-" width="230" alt="man showing phone app" />
+                        <td style="width: 230px;">
+                          <img src="https://i.postimg.cc/hj9YTTXt/dexcomman.png" width="230" alt="man showing phone app" />
                         </td>
                       </tr>
                       <!--  -->
@@ -670,7 +456,8 @@
                                   Helvetica, Arial, 'Lucida Grande', sans-serif;
                                 text-decoration: none;
                                 border-bottom: 2px solid green;">
-                            Avoid sensor failures</a>
+                            Avoid sensor failures
+                          </a>
                         </td>
                       </tr>
                       <!--  -->
@@ -681,9 +468,9 @@
                                 font-size: 13px;
                                 font-family: 'Open Sans', 'Helvetica Neue',
                                   Helvetica, Arial, 'Lucida Grande', sans-serif;
-                                padding: 0px 0 0 0;
                                 text-decoration: none;
-                                border-bottom: 2px solid green;">Reinforce sensor adhesive</a>
+                                border-bottom: 2px solid green;">Reinforce sensor adhesive
+                          </a>
                         </td>
                       </tr>
                       <!--  -->
@@ -694,10 +481,10 @@
                                 font-size: 13px;
                                 font-family: 'Open Sans', 'Helvetica Neue',
                                   Helvetica, Arial, 'Lucida Grande', sans-serif;
-                                padding: 0px 0 0 0;
                                 border-bottom: 2px solid green;
                                 text-decoration: none;">
-                            Prepping skin for sensor</a>
+                            Prepping skin for sensor
+                          </a>
                         </td>
                       </tr>
                     </table>
@@ -709,7 +496,7 @@
           <!-- !still have questions table  7-->
           <tr>
             <td>
-              <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
+              <table width="100%" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation"
                 margin="0" style="
                     background: #f9fefa;
                     padding: 15px 0px 0px 0px;
@@ -749,7 +536,7 @@
                 <!-- button -->
                 <tr>
                   <td>
-                    <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 0 0 0px 0;">
+                    <table border="0" cellspacing="0" cellpadding="0" align="center">
                       <tr>
                         <td style="
                               padding: 12px 20px 12px 20px;
@@ -781,7 +568,7 @@
                         padding: 40px 0 15px 0;
                         margin: 0;
                         color: #434141;">
-                    <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table  width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
                       role="presentation" margin="0">
                       <tr>
                         <td>
@@ -805,7 +592,6 @@
                                   Helvetica, Arial, 'Lucida Grande', sans-serif;
                                 font-size: 13px;
                                 color: #434141;
-                                line-height: 24px;
                                 text-align: center;
                                 line-height: 24px;
                                 font-size: 10px;">
@@ -949,19 +735,23 @@
                       </tr>
                       <!--  -->
                       <tr>
-                        <td style="text-align: center; padding: 10px 0 10px 0;">
-                          <a href="#">
+                        <td class="social" style="text-align: center; padding: 10px 0 10px 0;text-decoration: none;">
+                          <a href="https://www.facebook.com/" style="text-decoration: none;">
                             <img src="https://i.postimg.cc/3w0VrP7p/fb.png
-" alt="facebook link" style="width: 30px; padding: 2px;" /></a>
-                          <a href="#">
+" alt="facebook link" style="width: 30px; padding: 2px;" />
+</a>
+                          <a href="https://www.linkedin.com/" style="text-decoration: none;">
                             <img src="https://i.postimg.cc/FsG2TyDf/linkedin.png
-" alt=" linkedin link" style="width: 30px; padding: 2px;" /></a>
-                          <a href="#">
+" alt=" linkedin link" style="width: 30px; padding: 2px;" />
+</a>
+                          <a href="https://www.instagram.com/" style="text-decoration: none;">
                             <img src="https://i.postimg.cc/fTMG72jn/insta.png
-" alt="instagram link" style="width: 30px; padding: 2px;" /></a>
-                          <a href="#">
-                            <img src="https://i.postimg.cc/qv5WTkf4/yt.png" alt=""
-                              style="width: 30px; padding: 2px;" /></a>
+" alt="instagram link" style="width: 30px; padding: 2px;" />
+</a>
+                          <a href="https://www.youtube.com/" style="text-decoration: none;">
+                            <img src="https://i.postimg.cc/qv5WTkf4/yt.png" alt="youtube link"
+                              style="width: 30px; padding: 2px;" />
+                            </a>
                         </td>
                       </tr>
                       <!--  -->
